@@ -60,6 +60,10 @@ p {
     line-height: 1.5;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
 
 /* 
 
@@ -350,6 +354,7 @@ FEATURES ↓
     color: blue;
     letter-spacing: 1.6;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .section__title {
@@ -595,23 +600,6 @@ PRICING ↓
     border-top-right-radius: 8px;
 }
 
-.plan:nth-child(1) .plan__stripe,
-.plan:nth-child(1) .plan__button {
-    color: #f7fafc;
-    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-}
-
-.plan:nth-child(2) .plan__stripe {
-    color: #f7fafc;
-    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-}
-
-.plan:nth-child(3) .plan__stripe {
-    color: #f7fafc;
-    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
-}
-
-
 .plan {
     position: relative;
     margin-top: 64px;
@@ -649,6 +637,21 @@ PRICING ↓
     color: #718096;
     font-size: 16px;
     line-height: 1.5;
+}
+
+.plan__button {
+    background-color: rgb(100, 21, 255);
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.5;
+    padding: 16px 32px;
+    border-radius: 9999px;
+}
+
+.plan__button:hover {
+    opacity: 0.7;
 }
 
 .plan__top {
@@ -699,6 +702,36 @@ PRICING ↓
     line-height: 1.5;
 }
 
+.plan:nth-child(1) .plan__stripe,
+.plan:nth-child(1) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan:nth-child(2) .plan__button {
+    color: rgb(100, 21, 255);
+    background-color: rgb(247, 250, 252);
+}
+
+
+
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__duration,
+.plan:nth-child(2) .plan__target,
+.plan:nth-child(2) .plan__feature {
+    color: white;
+}
+
+.plan:nth-child(3) .plan__stripe,
+.plan:nth-child(3) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
 
 
 /* 
@@ -710,6 +743,17 @@ TESTIMONIALS ↓
 
 #testimonials .row {
     display: flex;
+    max-width: 1280px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.testimonials__img,
+.testimonials__description {
+    width: 50%;
 }
 
 
