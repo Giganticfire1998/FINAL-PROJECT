@@ -577,8 +577,129 @@ PRICING ↓
 }
 
 .plans {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-between;
+}
+
+
+.plan__stripe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.plan:nth-child(1) .plan__stripe,
+.plan:nth-child(1) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(2) .plan__stripe {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(3) .plan__stripe {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+
+.plan {
+    position: relative;
+    margin-top: 64px;
+    width: 100%;
+    max-width: 384px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 0 32px;
+    padding-top: 8px;
+    text-align: center;
+    color: rgb(26, 32, 44);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     
 }
+
+.plan__name {
+    font-size: 20px;
+}
+
+.plan__price {
+    font-size: 48px;
+    margin: 4px 0;
+}
+
+.plan__duration {
+    font-size: 16px;
+    letter-spacing: 1.6px;
+}
+
+.plan__feature {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.plan__top {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.plan__middle {
+    margin-left: -32px;
+    margin-right: -32px;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    padding: 32px;
+}
+
+.plan__bottom {
+    padding: 64px 32px;
+}
+
+.plan:nth-child(odd) .plan__name,
+.plan:nth-child(odd) .plan__price,
+.plan:nth-child(odd) .plan__target {
+    color:#1a202c;
+}
+
+.plan:nth-child(odd) .plan__duration {
+    color: #a0aec0;
+}
+
+.plan:nth-child(1) .plan__middle,
+.plan:nth-child(3) .plan__middle {
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
+}
+
+
+.plan__name,
+.plan__price,
+.plan__duration {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
 
 /* 
 
