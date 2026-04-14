@@ -254,10 +254,9 @@ h1 {
 }
 
 .header__description {
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .header__description--para {
@@ -368,6 +367,10 @@ FEATURES ↓
     margin: 24px 0;
     font-weight: 900;
     line-height: 1.5;
+}
+
+#features .section__title {
+    text-align: center;
 }
 
 .section__para {
@@ -657,6 +660,10 @@ PRICING ↓
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#pricing .section__para {
+    text-align: center;
 }
 
 .plans {
@@ -1207,7 +1214,7 @@ MOBILE RESPONSIVENESS ↓
 
     .values__list {
         display: flex;
-    }
+    } 
 }
 
 @media (max-width: 1024px) {
@@ -1318,8 +1325,7 @@ MOBILE RESPONSIVENESS ↓
         flex-direction: column;
     }
 
-   
-
+  
  }
 
 @media(max-width: 768px) {
@@ -1334,6 +1340,10 @@ MOBILE RESPONSIVENESS ↓
     }
     #pricing .row {
         margin-top: 40px;
+    }
+
+    .section__title {
+        text-align: center;
     }
 
     .quality__description {
@@ -1447,6 +1457,8 @@ MOBILE RESPONSIVENESS ↓
     .footer__column {
         width:calc(100% / 3);
     }
+
+    
     
 }
 
@@ -1459,7 +1471,7 @@ MOBILE RESPONSIVENESS ↓
         padding-bottom: 4px;
     }
 
-    .seection_title {
+    .section_title {
         font-size: 30px;
     }
 
